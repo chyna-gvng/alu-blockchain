@@ -21,7 +21,6 @@
 
 /**
  * struct block_info_s - Block info structure
- *
  * @index:      Index of the Block in the Blockchain
  * @difficulty: Difficulty of proof of work (hash leading zero bits)
  * @timestamp:  Time the Block was created at (UNIX timestamp)
@@ -48,7 +47,6 @@ typedef struct block_info_s
 
 /**
  * struct block_data_s - Block data
- *
  * @buffer: Data buffer
  * @len:    Data size (in bytes)
  */
@@ -64,7 +62,6 @@ typedef struct block_data_s
 
 /**
  * struct block_s - Block structure
- *
  * @info: Block info
  * @data: Block data
  * @hash: 256-bit digest of the Block, to ensure authenticity
@@ -78,7 +75,6 @@ typedef struct block_s
 
 /**
  * struct blockchain_s - Blockchain structure
- *
  * @chain: Linked list of pointers to block_t
  */
 typedef struct blockchain_s
@@ -108,7 +104,6 @@ typedef struct blockchain_s
 
 /**
  * struct hblk_file_s - HBLK file format
- *
  * @hblk_magic: magic bytes for HBLK file format
  * @hblk_version: Blockchain version
  * @hblk_endian: endianness, 1 is Little endian, 2 is Big endian
